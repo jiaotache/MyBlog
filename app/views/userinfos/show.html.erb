@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @userinfo.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @userinfo.password %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @userinfo.birthday %>
+</p>
+
+<p>
+  <strong>Introduction:</strong>
+  <%= @userinfo.introduction %>
+</p>
+
+<%= link_to 'Edit', edit_userinfo_path(@userinfo) %> |
+<%= link_to 'Back', userinfos_path %>
